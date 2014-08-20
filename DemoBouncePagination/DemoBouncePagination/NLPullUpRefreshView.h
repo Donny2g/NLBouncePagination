@@ -17,7 +17,7 @@
 }
 
 @property (nonatomic, weak) id delegate;
-@property (nonatomic, strong) UIScrollView *owner;
+@property (nonatomic, weak) UIScrollView *owner;
 @property (nonatomic, strong) UILabel *refreshLabel;
 @property (nonatomic, strong) UIImageView *refreshArrow;
 @property (nonatomic, strong) UIActivityIndicatorView *refreshSpinner;
