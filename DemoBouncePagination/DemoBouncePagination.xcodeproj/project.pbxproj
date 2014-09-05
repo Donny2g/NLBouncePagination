@@ -26,6 +26,11 @@
 		D7C20597199DE96200D98A6E /* NLPullUpRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C20592199DE96200D98A6E /* NLPullUpRefreshView.m */; };
 		D7C20598199DE96200D98A6E /* NLSubTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C20594199DE96200D98A6E /* NLSubTableViewController.m */; };
 		D7C2059D199DEFD700D98A6E /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D7C2059C199DEFD700D98A6E /* arrow.png */; };
+		D7C7F82119B9645300E61B10 /* NLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F82019B9645300E61B10 /* NLMainViewController.m */; };
+		D7C7F82419B9668400E61B10 /* DemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F82319B9668400E61B10 /* DemoMainViewController.m */; };
+		D7C7F82819B9697C00E61B10 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C7F82719B9697C00E61B10 /* Reveal.framework */; };
+		D7C7F82B19B9B84A00E61B10 /* NLSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F82A19B9B84A00E61B10 /* NLSubViewController.m */; };
+		D7C7F82E19BA28B900E61B10 /* DemoSubTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F82D19BA28B900E61B10 /* DemoSubTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,15 @@
 		D7C20593199DE96200D98A6E /* NLSubTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLSubTableViewController.h; sourceTree = "<group>"; };
 		D7C20594199DE96200D98A6E /* NLSubTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLSubTableViewController.m; sourceTree = "<group>"; };
 		D7C2059C199DEFD700D98A6E /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		D7C7F81F19B9645300E61B10 /* NLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLMainViewController.h; sourceTree = "<group>"; };
+		D7C7F82019B9645300E61B10 /* NLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLMainViewController.m; sourceTree = "<group>"; };
+		D7C7F82219B9668400E61B10 /* DemoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMainViewController.h; sourceTree = "<group>"; };
+		D7C7F82319B9668400E61B10 /* DemoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMainViewController.m; sourceTree = "<group>"; };
+		D7C7F82719B9697C00E61B10 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		D7C7F82919B9B84A00E61B10 /* NLSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLSubViewController.h; sourceTree = "<group>"; };
+		D7C7F82A19B9B84A00E61B10 /* NLSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLSubViewController.m; sourceTree = "<group>"; };
+		D7C7F82C19BA28B900E61B10 /* DemoSubTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoSubTableViewController.h; sourceTree = "<group>"; };
+		D7C7F82D19BA28B900E61B10 /* DemoSubTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSubTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,7 @@
 				D7C2055A199DE89D00D98A6E /* CoreGraphics.framework in Frameworks */,
 				D7C2055C199DE89D00D98A6E /* UIKit.framework in Frameworks */,
 				D7C20558199DE89D00D98A6E /* Foundation.framework in Frameworks */,
+				D7C7F82819B9697C00E61B10 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +131,7 @@
 		D7C20556199DE89D00D98A6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7C7F82719B9697C00E61B10 /* Reveal.framework */,
 				D7C20557199DE89D00D98A6E /* Foundation.framework */,
 				D7C20559199DE89D00D98A6E /* CoreGraphics.framework */,
 				D7C2055B199DE89D00D98A6E /* UIKit.framework */,
@@ -131,6 +147,10 @@
 				D7C20567199DE89D00D98A6E /* NLAppDelegate.m */,
 				D7C20586199DE93600D98A6E /* DemoMainTableViewController.h */,
 				D7C20587199DE93600D98A6E /* DemoMainTableViewController.m */,
+				D7C7F82C19BA28B900E61B10 /* DemoSubTableViewController.h */,
+				D7C7F82D19BA28B900E61B10 /* DemoSubTableViewController.m */,
+				D7C7F82219B9668400E61B10 /* DemoMainViewController.h */,
+				D7C7F82319B9668400E61B10 /* DemoMainViewController.m */,
 				D7C20588199DE93600D98A6E /* DemoSubViewController.h */,
 				D7C20589199DE93600D98A6E /* DemoSubViewController.m */,
 				D7C2058C199DE94700D98A6E /* NLBouncePagination */,
@@ -173,14 +193,18 @@
 			isa = PBXGroup;
 			children = (
 				D7C20599199DEE8F00D98A6E /* resources */,
+				D7C7F81F19B9645300E61B10 /* NLMainViewController.h */,
+				D7C7F82019B9645300E61B10 /* NLMainViewController.m */,
+				D7C7F82919B9B84A00E61B10 /* NLSubViewController.h */,
+				D7C7F82A19B9B84A00E61B10 /* NLSubViewController.m */,
 				D7C2058D199DE96200D98A6E /* NLMainTableViewController.h */,
 				D7C2058E199DE96200D98A6E /* NLMainTableViewController.m */,
+				D7C20593199DE96200D98A6E /* NLSubTableViewController.h */,
+				D7C20594199DE96200D98A6E /* NLSubTableViewController.m */,
 				D7C2058F199DE96200D98A6E /* NLPullDownRefreshView.h */,
 				D7C20590199DE96200D98A6E /* NLPullDownRefreshView.m */,
 				D7C20591199DE96200D98A6E /* NLPullUpRefreshView.h */,
 				D7C20592199DE96200D98A6E /* NLPullUpRefreshView.m */,
-				D7C20593199DE96200D98A6E /* NLSubTableViewController.h */,
-				D7C20594199DE96200D98A6E /* NLSubTableViewController.m */,
 			);
 			name = NLBouncePagination;
 			sourceTree = "<group>";
@@ -290,12 +314,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C7F82419B9668400E61B10 /* DemoMainViewController.m in Sources */,
 				D7C20598199DE96200D98A6E /* NLSubTableViewController.m in Sources */,
 				D7C2058B199DE93600D98A6E /* DemoSubViewController.m in Sources */,
 				D7C20568199DE89D00D98A6E /* NLAppDelegate.m in Sources */,
+				D7C7F82B19B9B84A00E61B10 /* NLSubViewController.m in Sources */,
 				D7C20595199DE96200D98A6E /* NLMainTableViewController.m in Sources */,
 				D7C2058A199DE93600D98A6E /* DemoMainTableViewController.m in Sources */,
 				D7C20564199DE89D00D98A6E /* main.m in Sources */,
+				D7C7F82119B9645300E61B10 /* NLMainViewController.m in Sources */,
+				D7C7F82E19BA28B900E61B10 /* DemoSubTableViewController.m in Sources */,
 				D7C20596199DE96200D98A6E /* NLPullDownRefreshView.m in Sources */,
 				D7C20597199DE96200D98A6E /* NLPullUpRefreshView.m in Sources */,
 			);
@@ -414,9 +442,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoBouncePagination/DemoBouncePagination-Prefix.pch";
 				INFOPLIST_FILE = "DemoBouncePagination/DemoBouncePagination-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -427,9 +465,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoBouncePagination/DemoBouncePagination-Prefix.pch";
 				INFOPLIST_FILE = "DemoBouncePagination/DemoBouncePagination-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -494,6 +542,7 @@
 				D7C20582199DE89D00D98A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7C20583199DE89D00D98A6E /* Build configuration list for PBXNativeTarget "DemoBouncePaginationTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +551,7 @@
 				D7C20585199DE89D00D98A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

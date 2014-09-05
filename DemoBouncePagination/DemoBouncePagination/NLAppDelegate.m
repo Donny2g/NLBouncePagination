@@ -8,6 +8,7 @@
 
 #import "NLAppDelegate.h"
 #import "DemoMainTableViewController.h"
+#import "DemoMainViewController.h"
 
 @implementation NLAppDelegate
 
@@ -15,7 +16,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = (UIViewController *)[[DemoMainTableViewController alloc] init];
+    
+    // 以下两种方式创建拉动效果
+    // 1. 通过普通UIViewController
+    self.window.rootViewController = [[DemoMainViewController alloc] init];
+    
+    // 2. 通过UITableViewController
+//    self.window.rootViewController = [[DemoMainTableViewController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }
