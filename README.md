@@ -14,7 +14,26 @@ iOS仿淘宝详情滑动翻页
 	```
 	self.subTableViewController = [[DemoSubViewController alloc] init];
 	```	
+
+4. 作为一种补充方式，你可以不用`UITableView`，直接使用`UIScrollView`
+```
+// 1. 继承主VC(NLMainViewController)和子VC(NLSubViewController)
+// 2. 在主VC的`viewDidLoad`中关联子VC：
+	self.subViewController = [[DemoSubViewController alloc] init];
+    self.subViewController.mainViewController = self;
+// 3. 父VC和子VC的view都应该添加到vc.scrollView上，并且需要设置vc.scrollView.contentSize:
+	self.scrollView.contentSize = CGSizeMake(320, 400);
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 300, 400)];
+    view.backgroundColor = [UIColor blueColor];
+	[self.scrollView addSubview:view];
+
+```
 	
 ## 协议
-MIT	
+`MIT`
+
+
+## 问题和建议
+https://github.com/noahlu/NLBouncePagination/issues
+
 
