@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 noahlu<codedancerhua@gmail.com>. All rights reserved.
 //
 
-#import "NLSubTableViewController.h"
+#import "NLSubViewController.h"
 
-@interface DemoSubViewController : NLSubTableViewController<UITableViewDataSource, UITableViewDelegate>
+@interface DemoSubViewController : NLSubViewController
 
 @end
