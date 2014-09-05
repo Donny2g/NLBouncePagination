@@ -37,6 +37,7 @@
         self.refreshArrow.frame = CGRectMake(70,
                                         (floorf(REFRESHER_HEIGHT - 27) / 2),
                                         27, 27);
+        [self.refreshArrow layer].transform = CATransform3DMakeRotation(M_PI, 0, 0, 1);
         
         self.refreshSpinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         self.refreshSpinner.frame = CGRectMake((frame.size.width - 20)/2, (REFRESHER_HEIGHT - 20)/2, 20, 20);
@@ -90,14 +91,14 @@
             
             // User is scrolling above the footer
             self.refreshLabel.text = REFRESH_RELEASED_STATUS;
-            [self.refreshArrow layer].transform = CATransform3DMakeRotation(M_PI, 0, 0, 1);
+            [self.refreshArrow layer].transform = CATransform3DMakeRotation(M_PI * 2, 0, 0, 1);
         }
         
         else {
             
             // User is scrolling somewhere within the footer
             self.refreshLabel.text = REFRESH_PULL_UP_STATUS;
-            [self.refreshArrow layer].transform = CATransform3DMakeRotation(M_PI * 2, 0, 0, 1);
+            [self.refreshArrow layer].transform = CATransform3DMakeRotation(M_PI, 0, 0, 1);
         }
         [UIView commitAnimations];
     }
@@ -106,6 +107,7 @@
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     if (isLoading || !self.hasMore) return;
     isDragging = NO;
+    [self.refreshArrow layer].transform = CATransform3DMakeRotation(M_PI, 0, 0, 1);
     
     // 上拉刷新
     if(scrollView.contentOffset.y > 0 && [self contentOffsetBottom:scrollView] <= -REFRESHER_HEIGHT){
@@ -154,7 +156,7 @@
     [UIView setAnimationDuration:0.1];
     [UIView setAnimationDidStopSelector:@selector(stopLoadingComplete:finished:context:)];
     
-    [self.refreshArrow layer].transform = CATransform3DMakeRotation(M_PI * 2, 0, 0, 1);
+    [self.refreshArrow layer].transform = CATransform3DMakeRotation(M_PI, 0, 0, 1);
     [UIView commitAnimations];
 }
 
