@@ -7,10 +7,9 @@
 //
 
 #import "DemoMainTableViewController.h"
-#import "DemoSubViewController.h"
+#import "DemoSubTableViewController.h"
 
 @interface DemoMainTableViewController ()
-
 @property(nonatomic, strong)NSMutableArray *dataListOne;
 @end
 
@@ -25,7 +24,7 @@
         [self.dataListOne addObject:[NSString stringWithFormat:@"Page one text %d", i]];
     }
     
-    self.subTableViewController = [[DemoSubViewController alloc] init];
+    self.subTableViewController = [[DemoSubTableViewController alloc] init];
 }
 #pragma mark - Table view data source
 
