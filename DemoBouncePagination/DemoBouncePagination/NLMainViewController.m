@@ -31,8 +31,6 @@
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     self.scrollView.delegate = self;
     
-    // make sure scroll enabled
-    self.scrollView.contentSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height + 100);
     [self.view addSubview:self.scrollView];
     
     self.isResponseToScroll = YES;
@@ -41,12 +39,14 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    // make sure scroll enabled
+    self.scrollView.contentSize = CGSizeMake(self.scrollView.contentSize.width, self.scrollView.contentSize.height + 100.f);
     [self addRefreshView];
     [self addSubPage];
     
     self.contentInsetTop = self.scrollView.contentInset.top;
     
-    self.scrollView.contentSize = CGSizeMake(self.scrollView.contentSize.width, self.scrollView.contentSize.height + 100.f);
+    self.scrollView.contentSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height + 100);
 }
 
 - (void)addRefreshView {
